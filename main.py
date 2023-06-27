@@ -41,12 +41,6 @@ class Attendence(db.Model):
     rollno=db.Column(db.String(100))
     attendance=db.Column(db.Integer())
 
-class Trig(db.Model):
-    tid=db.Column(db.Integer,primary_key=True)
-    rollno=db.Column(db.String(100))
-    action=db.Column(db.String(100))
-    timestamp=db.Column(db.String(100))
-
 
 class User(UserMixin,db.Model):
     id=db.Column(db.Integer,primary_key=True)
